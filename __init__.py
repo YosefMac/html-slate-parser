@@ -360,6 +360,12 @@ class MyHTMLParser(HTMLParser, object):
             parent_type = 'h2'
         elif self._parent == 'h3':
             parent_type = 'h3'
+        elif self._parent == 'h4':
+            parent_type = 'h4'
+        elif self._parent == 'h5':
+            parent_type = 'h5'
+        elif self._parent == 'h6':
+            parent_type = 'h6'
         else:
             parent_type = 'paragraph'
 
